@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background: plum;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid purple;
+            margin: 5px;
+        }
+        .container {
+            display: flex;
+            %flex-direction: column;
+        }
+        .grid_container {
+            display: grid;
+        }
+        .flex_div {
+            background: pink;
+        }
+        .grid_div {
+            background: peachpuff;
+        }
+    </style>
+</head>
+<body>
+    <div>--Dav's Lab--<br> Come and have some fun!</div>
+    <div> Here the margins of both divs collapse. Notice the narrow gap in between this and the previous box.</div>
+    <section class="container">
+        <div class="flex_div"> Flex margins: Here the margins of both divs do not collapse because this is a flexbox container.</div>    
+        <div class="flex_div"> A new div inside a flex container will be placed horizontally by default and will not overlap margins with other elements.</div>
+    </section>
+    <section class="grid_container">
+        <div class="grid_div"> Grid margins: Here, the margins of both divs do not collapse because this is a css-grid container.</div>    
+        <div class="grid_div"> A new div inside a grid container will be placed vertically by default and will not overlap margins with other elements.</div>
+    </section>
+    
+</body>
+</html>

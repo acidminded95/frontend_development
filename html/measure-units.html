@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background: #533E85;
+            font-family: "MesloLGS NF";
+            color: #C1F8CF;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            margin: 0px;;
+        }
+        div {
+            width: 200px;
+            height: 30px;
+            background: #488FB1;
+            padding: 5px;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            background: #4FD3C4;
+            color: #533E85;
+            font-size: 5rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        div > div {
+            width: 80px;
+            height: 80px;
+            font-size: 5rem;
+        }
+        #b {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+        #o1 {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        #o2 {
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+        }
+        #o3 {
+            grid-row: 4 / 5;
+            grid-column: 4 / 5;
+        }
+        #m {
+            grid-row: 5 / 6;
+            grid-column: 5 / 6;
+        }
+        #exclam {
+            grid-row: 6 / 7;
+            grid-column: 6 / 7;
+        }
+    </style>
+</head>
+<body>
+    <div> -- Dav's Lab --</div>
+    <p> Here comes the B O O M !</p>
+    <div class="container"> 
+        <div id="b">B</div>
+        <div id="o1">O</div>
+        <div id="o2">O</div>
+        <div id="o3">O</div>
+        <div id="m">M</div>
+        <div id="exclam">!!</div>
+    </div>
+</body>
+</html>
